@@ -14,7 +14,8 @@ RUN apt-get update -y && \
     apt-get autoclean && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/* &&
-    apt-get install --yes --force-yes --no-install-recommends software-properties-common \
+    
+RUN apt-get install --yes --force-yes --no-install-recommends software-properties-common \
         file-roller \
         evince \ 
         gpicview \
