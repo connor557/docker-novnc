@@ -25,10 +25,10 @@ RUN apt-get install --yes --force-yes --no-install-recommends software-propertie
         thunderbird \
         pidgin \
     
-RUN add-apt-repository -y ppa:numix/ppa \ &&
-    apt-get update \ &&
-    apt-get install --yes --force-yes --no-install-recommends numix-icon-theme numix-icon-theme-circle \ &&
-    apt-get clean \ &&
+RUN add-apt-repository -y ppa:numix/ppa && \
+    apt-get update && \
+    apt-get install --yes --force-yes --no-install-recommends numix-icon-theme numix-icon-theme-circle && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 CMD /startup.sh
