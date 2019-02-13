@@ -23,7 +23,7 @@ RUN apt-get install --yes --force-yes --no-install-recommends software-propertie
         ttf-ubuntu-font-family \
         xfce4-goodies \
         thunderbird \
-        pidgin \
+        pidgin
     
 RUN add-apt-repository -y ppa:numix/ppa && \
     apt-get update && \
